@@ -1,0 +1,333 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+.about {
+	background-color: #0A0A0A;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	line-height: 1;
+}
+
+
+.home {
+	background: url('img/background.jpg') no-repeat center center fixed;
+	/* background-color: #0A0A0A; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	line-height: 1;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.action-learn {
+  padding-top: 1.5em;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+/**
+Animiations
+https://github.com/IanLunn/Hover/blob/master/css/hover.css
+**/
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* Resources */
+.resource-wrapper {
+	margin-left: 10vw;
+	margin-top: 5vh;
+	margin-bottom: 10vh;
+	padding-bottom: 5vh;
+}
+.resource-wrapper h2 {
+	font-size: 3em;
+}
+
+.icon {
+	font-size: 0.7em;
+}
+
+/* Calendar */
+
+#calendar {
+	margin: 5vh 5vw 5vh 5vw;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+.fc .fc-daygrid-day-frame {
+	color: white;
+	background-color: #181818;
+}
+.table-bordered thead th, .table-bordered thead td {
+	color: white;
+}
+
+.fc-col-header-cell-cushion {
+	font-weight: 500;
+}
+
+.fc-toolbar-title {
+	font-weight: 300;
+}
+
+/* Chapters */
+
+.chapters-wrapper {
+	margin-bottom: 10vh;
+}
+
+.chapters-wrapper .card {
+	margin: 5vh 0 0 0;
+}
+
+.card {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 1em;
+	color: black;
+	height: 383px;
+}
+
+.card .card-text {
+	color: black;
+	font-weight: 300;
+}
+
+
+
+
+
+/* Footer */
+.footer-icon {
+	display: inline-flex;
+	justify-content: end;
+}
+
+footer {
+	background-color: #141414;
+	width: 100vw;
+	height: 50px;
+	bottom: 0;
+	position: fixed;
+}
+
+footer p {
+	font-size: 1em;
+}
+
+/* About */
+
+
+.name h2 {
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.circle-clip {
+	border-radius: 50%;
+	border: 3px solid #fff;
+}
+
+.team-wrapper {
+	padding-bottom: 10vw;
+}
+
+.team-member {
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 7.5vw 7.5vw 0 7.5vw; /* Bottom margin 0 makes space for .name */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.name {
+}
+
+/* Main */
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: #05e3e3
+}
+
+.active {
+	font-weight: 700;
+}
+.main {
+  position: relative;
+	height: 100vh;
+
+}
+
+.logo {
+	width: 622px;
+	height: 256px;
+
+}
+
+.header-wrapper {
+	margin-top: 10vh;
+	margin-left: 5vw;
+	width: auto;
+}
+
+
+p {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 1.25em;
+	font-weight: 300;
+	color: white;
+}
+
+h2 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: white;
+  width: 100%;
+  line-height: 1.25em;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-weight: 700;
+	font-size: 4em;
+
+}
+
+.action-learn {
+  font-family: 'Helvetica', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85em;
+  color: white;
+
+}
+
+/* Navbar */
+.navbar {
+	position: relative;
+  float: right;
+  margin-top: 5vh;
+	margin-right: 10vw;
+	z-index: 2;
+}
+
+.navbar-toggler {
+	border: 1px solid white;
+}
+.nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 0.85em;
+  letter-spacing: 0.185em;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  /* For na phones: */
+	.team-member {
+		margin: auto;
+		margin-top: 5vh;
+	}
+
+	.mobile-logo {
+		display: initial;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.main {
+		margin-left: -10vw;
+	}
+}
